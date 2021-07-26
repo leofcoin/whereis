@@ -1,12 +1,16 @@
 const dotenv = require('dotenv')
 const Koa = require('koa')
 const fetch = require('node-fetch')
+const cors = require('@koa/cors');
 
 dotenv.config()
 const accessToken = dotenv.accessToken
 
 const server = new Koa()
 const cache = new Map()
+server.use(cors({
+  origin: '*'
+}))
 
 setInterval(() => {
   const now = new Date().getTime()
