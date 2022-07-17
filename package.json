@@ -1,6 +1,6 @@
 {
   "name": "@leofcoin/whereis",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The whereis service running on [whereis.leofcoin.org](https://whereis.leofcoin.org)",
   "main": "whereis.js",
   "bin": {
