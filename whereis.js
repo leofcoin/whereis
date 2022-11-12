@@ -22,14 +22,14 @@ setInterval(() => {
 }, 4.32e+7) // 0.5 day
 
 const whereis = async ip => {
-  const url = `https://ip-geolocation-ipwhois-io.p.rapidapi.com/json/?ip=${ip}`
+  const url = `https://ipwho.is/${ip}`
 
   const options = {
     method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': 'd750860d0amshc4aef751c1a2769p18b50ejsn8b67eac32a55',
-      'X-RapidAPI-Host': 'ip-geolocation-ipwhois-io.p.rapidapi.com'
-    }
+    // headers: {
+    //   'X-RapidAPI-Key': 'd750860d0amshc4aef751c1a2769p18b50ejsn8b67eac32a55',
+    //   'X-RapidAPI-Host': 'ip-geolocation-ipwhois-io.p.rapidapi.com'
+    // }
   }
 
   let response = await fetch(url, options)
