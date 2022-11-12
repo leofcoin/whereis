@@ -49,9 +49,10 @@ server.use(async ctx => {
     response = await whereis(ctx.query.ip)
     const data = {
       value: {
-        lat: response.lat,
-        lon: response.lon,
-        country: response.country
+        lat: response.latitude,
+        lon: response.longitude,
+        country: response.country,
+        flag: response.flag
       },
       timestamp: new Date().getTime()
     }
